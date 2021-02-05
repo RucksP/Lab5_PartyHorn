@@ -10,7 +10,7 @@ jobs:
     if: github.event.name == 'issues'
     runs-on: ubuntu-latest
     steps:
-      - name: Add funny gif
+      - name: Funny comments
         uses: Marta83/funny-comment-action@v2.1
         id: Gifo
         with:
