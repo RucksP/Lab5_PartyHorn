@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Gif Comment
+
+# Controls when the action will run. 
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  comment:
+    
+    if: github.event.name == 'issues'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add funny comment
+        uses: Marta83/funny-comment-action@2.1
+        id: Funny Comment
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
+          comment_type: 'gif'
