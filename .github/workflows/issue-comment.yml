@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Add funny comment
         uses: Marta83/funny-comment-action@2.1
-        id: Funny Comment
+        id: Gifo
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
